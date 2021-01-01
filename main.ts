@@ -1,5 +1,7 @@
+
 huskylens.initI2c()
-huskylens.initMode(protocolAlgorithm.ALGORITHM_FACE_RECOGNITION)
+huskylens.initMode(protocolAlgorithm.ALGORITHM_OBJECT_TRACKING)
+
 basic.forever(function () {
     huskylens.request()
     if (huskylens.isAppear(1, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
